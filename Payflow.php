@@ -14,10 +14,15 @@ class Payflow {
     private $password = '';
     private $TRXTYPE = 'S';
     private $TENDER = 'C';
+    private $currency = 'USD';
     public $data = [];
 
     public function setEnv($env) {
         $this->environment = $env;
+    }
+    
+    public function setCurrency($currency) {
+        $this->currency = $currency;
     }
 
     public function setVendor($vendor) {
@@ -78,6 +83,7 @@ class Payflow {
         $this->data['PWD'] = $this->password;
         $this->data['TENDER'] = $this->TENDER;
         $this->data['TRXTYPE'] = $this->TRXTYPE;
+        $this->data['CURRENCY'] = $this->currency;
     }
 
     private function __getPayload() {

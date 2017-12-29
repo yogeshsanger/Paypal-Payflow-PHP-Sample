@@ -12,6 +12,7 @@
 	$payflow->setEnv('sandbox');
 	$payflow->setPartner('Partner Name');
 	$payflow->setVendor('Merchant Login');
+	$payflow->setCurrency('USD');
 	$payflow->setUser('User Name');
 	$payflow->setPassword('Password');
 	$payflow->data['ACCT'] = '4111111111111111';
@@ -43,6 +44,7 @@
 	$payflow->setVendor('Merchant Login');
 	$payflow->setUser('User Name');
 	$payflow->setPassword('Password');
+	$payflow->setCurrency('USD');
 	$payflow->data['AMT'] = number_format($cart->totalPrice, 2,'.', '');
         $payflow->data['ORIGID'] = $token;
         $resultPay = $payflow->pay();
