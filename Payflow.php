@@ -12,7 +12,7 @@ class Payflow {
     private $vendor = '';
     private $user = '';
     private $password = '';
-    private $TRXTYPE = 'A';
+    private $TRXTYPE = 'S';
     private $TENDER = 'C';
     public $data = [];
 
