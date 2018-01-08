@@ -1,7 +1,5 @@
 <?php
 
-namespace PaypalPayflow;
-
 class Payflow {
 
     private $environment = 'sandbox';
